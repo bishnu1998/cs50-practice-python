@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom2</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){ //i.e when the whole web page has beenloaded.go head and execute the following code.
+                $('#dom2').submit(function(event){ //$('#dom2') is abbravation form of document.getElementById('#dom2')
+                    alert('hello '+$('#name').val());
+                    event.preventDefault();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form id="dom2">
+            <input type="text" placeholder="name" id="name">
+            <input type="submit">
+        </form>
+    </body>
+</html>

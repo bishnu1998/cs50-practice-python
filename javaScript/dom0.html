@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>dom0</title>
+    <script>
+        function greet() {
+            alert('hello, ' + document.getElementById('name').value)
+        }
+    </script>
+</head>
+
+<body>
+    <form id="dom0" onsubmit="greet(); return false;">
+        <input type="text" placeholder="name" id="name">
+        <input type="submit">
+    </form>
+</body>
+
+</html>

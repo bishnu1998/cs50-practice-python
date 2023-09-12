@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom1.1</title>
+        <script>
+            window.onload=function(){
+                document.getElementById('dom1.1').onsubmit=function(){
+                alert('hello '+document.getElementById('name').value);
+                return false;
+            };
+            };
+        </script>
+    </head>
+    <body>
+        <form id="dom1.1">
+            <input type="text" placeholder="name" id="name">
+            <input type="submit">
+        </form>
+    </body>
+
+</html>
